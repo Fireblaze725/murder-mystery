@@ -10,6 +10,8 @@ using namespace std;
 
 int main()
 {
+    string input;
+
     cout << "Murder Mystery Game by Kyle Manning" <<endl<<endl;
     
     cout << "The time is 11:00 PM on Saturday, June 23, 2018." <<endl;
