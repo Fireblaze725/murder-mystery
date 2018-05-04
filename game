@@ -11,30 +11,90 @@ using namespace std;
 int main()
 {
     string input;
+    string advance;
 
-    cout << "Murder Mystery Game by Kyle Manning" <<endl<<endl;
+    cout << "   Murder Mystery Game by Kyle Manning" <<endl;
+    cin.ignore();
     
-    cout << "The time is 11:00 PM on Saturday, June 23, 2018." <<endl;
-    cout << "During a party at the house of the Cameron Robinson," <<endl;
-    cout << "the guests discovered the body of Mr. Robinson, dead" <<endl;
-    cout << "in his study. And thus I was called in to investigate." <<endl<<endl;
+    cout << "   The time is 11:00 PM on Saturday, June 23, 2018." <<endl;
+    cout << "   During a party at the house of the Cameron Robinson," <<endl;
+    cout << "   the guests discovered the body of Mr. Robinson, dead" <<endl;
+    cout << "   in his study. And thus I was called in to investigate." <<endl;
+    cin.ignore();
     
-    cout << "Joseph: Alright, let me introduce myself. I am Detective" <<endl;
-    cout << "Joseph Foster from the NYPD. I was called out here" <<endl;
-    cout << "on the discovery of a dead body, possibly murdered," <<endl;
-    cout << "which you all discovered, correct?" <<endl;
+    cout << "   Joseph: Alright, let me introduce myself. I am Detective" <<endl;
+    cout << "           Joseph Foster from the NYPD. I was called out here" <<endl;
+    cout << "           on the discovery of a dead body, possibly murdered," <<endl;
+    cout << "           which you all discovered, correct?" <<endl;
+    cin.ignore();
     
-    cout << "Zach: Yes, I discovered the body." <<endl;
+    cout << "   Zach: Yes, I discovered the body." <<endl;
+    cin.ignore();
     
-    cout << "Joseph: Before I begin the investigation, can you confirm" <<endl;
-    cout << "that you were the only ones inside the house at?" <<endl;
+    cout << "   Joseph: Before I begin the investigation, can you confirm" <<endl;
+    cout << "           that you were the only ones inside the house at?" <<endl;
+    cin.ignore();
     
-    cout << "Jake: Yes. I should know because I was the last one to arrive." <<endl;
+    cout << "   Jake: Yes. I should know because I was the last one to arrive." <<endl;
+    cin.ignore();
     
-    cout << "Joseph: Alright. I expect that you all will assist me in this" <<endl;
-    cout << "so that we can reach a quick resolution to this case." <<endl<<endl;
+    cout << "   Joseph: Alright. I expect that you all will assist me in this" <<endl;
+    cout << "           so that we can reach a quick resolution to this case." <<endl;
+    cin.ignore();
     
-    cout << "(This is the entryway to the house. From here, you can access the "
+    cout << "   (This is the entryway to the house. From here, you can access the " <<endl;
+    cout << "    rooms of the mansion and inverstigate. Type 'bedroom', 'study', 'kitchen'," <<endl;
+    cout << "    'dining', or 'lounge' to enter the rooms. When in rooms, enter numbers to" <<endl;
+    cout << "    examine objects or type first names to talk with suspects. Type 'hallway'" <<endl;
+    cout << "    to return to room selection. Type 'solve' in the hallway to choose who you" <<endl;
+    cout << "    think is the murderer, using the suspect's first name.)" << endl;
+    cin.ignore();
+    
+hallway:
+    cout << "   user input: ";
+    cin >> advance;
+    cout <<endl;
+    
+    if (advance == "bedroom")
+        goto bedroom;
+    
+    if (advance == "study")
+        goto study;
+    
+    if (advance == "kitchen")
+        goto kitchen;
+    
+    if (advance == "dining")
+        goto dining;
+    
+    if (advance == "lounge")
+        goto lounge;
+    
+    if (advance == "solve")
+        goto solution;
+    
+bedroom:
+    cout << "hello";
+    goto hallway;
 
+study:
+    cout << "hello";
+    goto hallway;
+
+kitchen:
+    cout << "hello";
+    goto hallway;
+
+dining:
+    cout << "hello";
+    goto hallway;
+
+lounge:
+    cout << "hello";
+    goto hallway;
+
+solution:
+    cout << "hello";
+    
     return 0;
 }
