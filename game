@@ -12,6 +12,7 @@ int main()
 {
     string input;
     string advance;
+    string murderer;
 
     cout << "   Murder Mystery Game by Kyle Manning" <<endl;
     cin.ignore();
@@ -51,7 +52,7 @@ int main()
     cin.ignore();
     
 hallway:
-    cout << "   user input: ";
+    cout << "   user input(hallway): ";
     cin >> advance;
     cout <<endl;
     
@@ -74,8 +75,29 @@ hallway:
         goto solution;
     
 bedroom:
-    cout << "hello";
-    goto hallway;
+    cout << "   (There are 3 suspicious items in the room. As well, Michael Pogge is in the room.)" <<endl;
+    cin.ignore();
+    goto bedroom_investigation;
+    
+bedroom_investigation:
+    cout << "   user input(bedroom): ";
+    cin >> input;
+    cout << endl;
+    
+    if (input == "1") {
+        cout << "   hello";
+        goto bedroom_investigation;
+    } else if (input == "2") {
+        cout << "   welcome";
+        goto bedroom_investigation;
+    } else if (input == "3") {
+        cout << "   goodbye";
+        goto bedroom_investigation;
+    } else if (input == "Michael" || input == "michael") {
+        cout << "   michael";
+        goto bedroom_investigation;
+    } else if (input == "hallway")
+        goto hallway;
 
 study:
     cout << "hello";
@@ -94,7 +116,13 @@ lounge:
     goto hallway;
 
 solution:
-    cout << "hello";
+    cout << "   The murderer is: ";
+    cin >> murderer;
+    
+    if (murderer == "Jake Kralis" || murderer == "jake kralis" || murderer == "Jake" || murderer == "jake") {
+        cout << "   Congratulations! You correctly guessed the culprit, and sent the murderer off to jail. You win!";
+    } else if (murderer != "Jake Kralis" || murderer != "jake kralis" || murderer != "Jake" || murderer != "jake")
+        cout << "   Oh no! You arrested an innocent person, and the murderer escaped. You lose.";
     
     return 0;
 }
