@@ -100,24 +100,103 @@ bedroom_investigation:
         goto hallway;
 
 study:
-    cout << "hello";
-    goto hallway;
+    cout << "   (There are 4 suspicious items in the room.)" <<endl;
+    cin.ignore();
+    goto study_investigation;
+
+study_investigation:
+    cout << "   user input(study): ";
+    cin >> input;
+    cout << endl;
+    
+    if (input == "1") {
+        cout << "   hello";
+        goto study_investigation;
+    } else if (input == "2") {
+        cout << "   welcome";
+        goto study_investigation;
+    } else if (input == "3") {
+        cout << "   bienvenido";
+        goto study_investigation;
+    } else if (input == "4") {
+        cout << "   goodbye";
+        goto study_investigation;
+    } else if (input == "hallway")
+        goto hallway;
 
 kitchen:
-    cout << "hello";
-    goto hallway;
+    cout << "   (There are 2 suspicious items in the room. As well, Tyson Kilby is in the room.)";
+    cin.ignore();
+    goto kitchen_investigation;
+
+kitchen_investigation:
+    cout << "   user input(kitchen): ";
+    cin >> input;
+    cout << endl;
+    
+    if (input == "1") {
+        cout << "   hello";
+        goto kitchen_investigation;
+    } else if (input == "2") {
+        cout << "   goodbye";
+        goto kitchen_investigation;
+    } else if (input == "Tyson" || input == "tyson") {
+        cout << "   tyson";
+        goto kitchen_investigation;
+    } else if (input == "hallway")
+        goto hallway;
 
 dining:
-    cout << "hello";
-    goto hallway;
+    cout << "   (There is 1 suspicious item in the room. As well, Riley Davidson and Zach Mutters are in the room) ";
+    cin.ignore();
+    goto dining_investigation;
+
+dining_investigation:
+    cout << "   user input(dining): ";
+    cin >> input;
+    cout << endl;
+    
+    if (input == "1") {
+        cout << "   hello";
+        goto dining_investigation;
+    } else if (input == "Riley" || input == "riley") {
+        cout << "   riley";
+        goto dining_investigation;
+    } else if (input == "Zach" || input == "zach") {
+        cout << "   zach";
+        goto dining_investigation;
+    } else if (input == "hallway")
+        goto hallway;
 
 lounge:
-    cout << "hello";
-    goto hallway;
+    cout << "   (Addison Manning, Jake Kralis, Taylor Pearson, and Stefen Hinman are in the room.)";
+    cin.ignore();
+    goto lounge_investigation;
+
+lounge_investigation:
+    cout << "   user input(lounge): ";
+    cin >> input;
+    cout << endl;
+    
+    if (input == "Addison" || input == "addison") {
+        cout << "   addison";
+        goto lounge_investigation;
+    } else if (input == "Jake" || input == "jake") {
+        cout << "   jake";
+        goto lounge_investigation;
+    } else if (input == "Taylor" || input == "taylor") {
+        cout << "   taylor";
+        goto lounge_investigation;
+    } else if (input == "Stefen" || input == "stefen") {
+        cout << "   stefen";
+        goto lounge_investigation;
+    } else if (input == "hallway")
+        goto hallway;
 
 solution:
     cout << "   The murderer is: ";
     cin >> murderer;
+    cout << endl;
     
     if (murderer == "Jake Kralis" || murderer == "jake kralis" || murderer == "Jake" || murderer == "jake") {
         cout << "   Congratulations! You correctly guessed the culprit, and sent the murderer off to jail. You win!";
