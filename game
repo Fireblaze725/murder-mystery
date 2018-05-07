@@ -85,16 +85,41 @@ bedroom_investigation:
     cout << endl;
     
     if (input == "1") {
-        cout << "   hello";
+        cout << "   (Under the bed, a letter covered in blood was hastily hidden. While the name of the" <<endl;
+        cout << "    sender is covered by the blood smears, the letter mentions themselv and Jake Kralis" << endl;
+        cout << "    coming under hard times due to recent public demands against the actions of several" <<endl;
+        cout << "    large companies.)" <<endl;
         goto bedroom_investigation;
     } else if (input == "2") {
-        cout << "   welcome";
+        cout << "   (A newspaper lays on top of the bed. The front page article is about public protests" <<endl;
+        cout << "    against several companies over their business practices. It talks about how a recent" <<endl;
+        cout << "    study about quality of life lead to the discovery of these business practices.)" <<endl;
         goto bedroom_investigation;
     } else if (input == "3") {
-        cout << "   goodbye";
+        cout << "   (A glass of water is set on the night stand. Upon further inspection, a strong scent is coming" <<endl;
+        cout << "    from the glass. The scent is from an expensive sleeping drug, something most people wouldn't" << endl;
+        cout << "    be able to purchase. This might somehow be related to the murder.)" <<endl;
         goto bedroom_investigation;
     } else if (input == "Michael" || input == "michael") {
-        cout << "   michael";
+        cout << "   Joseph: Hello. Michael Pogge, I assume?" <<endl<<endl;
+        cin.ignore();
+        cout << "   Michael: Yes, that's me." <<endl;
+        cin.ignore();
+        cout << "   Joseph: Could you tell me what your relation to the victim was?" <<endl;
+        cin.ignore();
+        cout << "   Michael: I've been friends with Cameron for a long time. We met in college, and hit it off" <<endl;
+        cout << "            immediately. We've been friends ever since." <<endl;
+        cin.ignore();
+        cout << "   Joseph: Would there be any reason someone would have wanted to murder Mr. Robinson?" <<endl;
+        cin.ignore();
+        cout << "   Michael: Not that I would know of. Sure, his research ended up angering some people," <<endl;
+        cout << "            especially his most recent, but he was a good person that everyone liked" <<endl;
+        cout << "            once they got to know him." <<endl;
+        cin.ignore();
+        cout << "   Joseph: Alright. Thank you for your assisstance." <<endl;
+        cin.ignore();
+        cout << "   (I didn't learn anything there.)" <<endl;
+        cin.ignore();
         goto bedroom_investigation;
     } else if (input == "hallway")
         goto hallway;
@@ -110,16 +135,24 @@ study_investigation:
     cout << endl;
     
     if (input == "1") {
-        cout << "   hello";
+        cout << "   (The victim's body, leaning against a bookshelf, motionless. The cause of death is blunt force trauma." <<endl;
+        cout << "    Inspection shows a single injury, possibly indicating instantaneous death upon trauma. The murder weapon" <<endl;
+        cout << "    has to be around here somewhere.)" <<endl;
         goto study_investigation;
     } else if (input == "2") {
-        cout << "   welcome";
+        cout << "   (A letter sits on the desk in the center of the room. The sender was Taylor Pearson, the victim's older sister." <<endl;
+        cout << "    The letter starts with some small talk, but then asks for financial help. It seems that her husband was let go" <<endl;
+        cout << "    and they are in need of assistance. Strange, the letter was left half unread as the top of the letter was the" <<endl;
+        cout << "    only part sticking out from the envelope.)" <<endl;
         goto study_investigation;
     } else if (input == "3") {
-        cout << "   bienvenido";
+        cout << "   (A set of papers lie on the desk in the center of the room. They detail a recent sociological study the victim" <<endl;
+        cout << "    had worked on. There are plenty of marks made with red pen on the notes, especially around mentions of companies." <<endl;
+        cout << "    Seems like he discovered some important things.)" <<endl;
         goto study_investigation;
     } else if (input == "4") {
-        cout << "   goodbye";
+        cout << "   (The murder weapon. A heavy bound notebook, taken from a shelf and now covered in blood. The book could've been" <<endl;
+        cout << "    wielded by anyone.)" <<endl;
         goto study_investigation;
     } else if (input == "hallway")
         goto hallway;
@@ -135,10 +168,13 @@ kitchen_investigation:
     cout << endl;
     
     if (input == "1") {
-        cout << "   hello";
+        cout << "   (A tray filled with drinks sits on the counter. Most are alcoholic, though some" <<endl;
+        cout << "    are just plain water. One of the spots on the tray seem to be empty.)" <<endl;
         goto kitchen_investigation;
     } else if (input == "2") {
-        cout << "   goodbye";
+        cout << "   (Hidden behind several spices in a cabinet is a bottle of sleeping medicine." <<endl;
+        cout << "    It's of the expensive variety, though the victim could easily afford it." <<endl;
+        cout << "    Did he even need it though?)" <<endl;
         goto kitchen_investigation;
     } else if (input == "Tyson" || input == "tyson") {
         cout << "   tyson";
@@ -157,7 +193,8 @@ dining_investigation:
     cout << endl;
     
     if (input == "1") {
-        cout << "   hello";
+        cout << "   (The guest list was left on the table. Everyone on the list is here. Strange, one of the guests" <<endl;
+        cout << "    here isn't on the list. I'll have to speak to Stefen Hinman.)" <<endl; 
         goto dining_investigation;
     } else if (input == "Riley" || input == "riley") {
         cout << "   riley";
@@ -185,10 +222,41 @@ lounge_investigation:
         cout << "   jake";
         goto lounge_investigation;
     } else if (input == "Taylor" || input == "taylor") {
-        cout << "   taylor";
+        cout << "   Joseph: Taylor Pearson, I'd like to ask a question about your brother." <<endl;
+        cin.ignore();
+        cout << "   Taylor: Okay, ask away." <<endl;
+        cin.ignore();
+        cout << "   Joseph: Did your brother have any health issues that the killer may have been" <<endl;
+        cout << "           able to exploit?" <<endl;
+        cin.ignore();
+        cout << "   Taylor: No, my brother was in excellent health." <<endl;
+        cin.ignore();
+        cout << "   Joseph: How has your relationship with your brother been recently?" <<endl;
+        cin.ignore();
+        cout << "   Taylor: It's been well, just a little strained. Recently my husband got laid off," <<endl;
+        cout << "           and with our current financial situation, I had to ask for help. I sent a" <<endl;
+        cout << "           letter, and then I got an invitation to this party in the mail a week ago." << endl;
+        cin.ignore();
+        cout << "   Joseph: Alright. Thank you for your cooperationn." <<endl;
+        cin.ignore();
+        cout << "   (Financial troubles, huh?)" <<endl;
+        cin.ignore();
         goto lounge_investigation;
     } else if (input == "Stefen" || input == "stefen") {
-        cout << "   stefen";
+        cout << "   Joseph: Hello, Stefen." <<endl;
+        cin.ignore();
+        cout << "   Stefen: I'm just going to come out and say it, I wasn't invited to this party." <<endl;
+        cin.ignore();
+        cout << "   Joseph: Then why are you here anyways?" <<endl;
+        cin.ignore();
+        cout << "   Stefen: I've been Cam's best friend ever since high school. We've been through" <<endl;
+        cout << "           a lot together. When I heard that he was hosting a party and I realized" <<endl;
+        cout << "           that I had not received an invitation. I thought it was strange, as this" <<endl;
+        cout << "           had never happened before. Worrying about the reason he didn't inivite me," <<endl;
+        cout << "           I came here to talk to him. But now this has happened. Oh God, Cam." <<endl;
+        cin.ignore();
+        cout << "   (It doesn't seem like Stefen is the murderer.)" <<endl;
+        cin.ignore();
         goto lounge_investigation;
     } else if (input == "hallway")
         goto hallway;
