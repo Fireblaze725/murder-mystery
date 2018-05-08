@@ -18,7 +18,7 @@ int main()
     cin.ignore();
     
     cout << "   The time is 11:00 PM on Saturday, June 23, 2018." <<endl;
-    cout << "   During a party at the house of the Cameron Robinson," <<endl;
+    cout << "   During a party at the house of Cameron Robinson," <<endl;
     cout << "   the guests discovered the body of Mr. Robinson, dead" <<endl;
     cout << "   in his study. And thus I was called in to investigate." <<endl;
     cin.ignore();
@@ -36,7 +36,7 @@ int main()
     cout << "           that you were the only ones inside the house at?" <<endl;
     cin.ignore();
     
-    cout << "   Jake: Yes. I should know because I was the last one to arrive." <<endl;
+    cout << "   Riley: Yes. I should know because I was the last one to arrive." <<endl;
     cin.ignore();
     
     cout << "   Joseph: Alright. I expect that you all will assist me in this" <<endl;
